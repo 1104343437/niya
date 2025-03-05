@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiro的monad计划</title>
+    <title>monad计划</title>
     <style>
         body {
             background-color: #b3e0ff;
@@ -155,47 +155,49 @@
 </head>
 <body>
     <div class="big-tag" onclick="window.open('https://testnet.monad.xyz', '_blank')">
-        Monad测试网
+        Monad主网
     </div>
 
     <div class="container" id="tag-container">
     </div>
-
-    <div class="bottom-tag" onclick="window.open('https://x.com/Darkerlllhiro', '_blank')">
-        hiro推特
+    <div class="bottom-tag" onclick="window.open('https://testnet.monadexplorer.com/', '_blank')">
+        测试网浏览器
     </div>
+  
 
-    <div class="remark-container">
-        <button class="close-btn" onclick="closeRemark()">×</button>
-        <strong>备注：</strong>
-        <p>这是关于Monad测试网的任务内容，或许不全面有补充的私我推特。介绍：第一，每次打开该任务网站，所有任务列表都会随机排列，产生随机性，避免相似交互被女巫。第二，每次点击对应内容交互后都会打勾记录，避免忘记某项任务（我自己记性不好经常忘）持续更新中。</p>
-    </div>
 
     <script>
         const tags = [
-            { name: "Monad域名", url: "https://app.nad.domains/" },
             { name: "Apriori质押", url: "https://stake.apr.io/" },
             { name: "Ambient交易", url: "https://monad.ambient.finance/" },
-            { name: "Fantasy卡牌", url: "https://monad.fantasy.top/" },
+            { name: "Fantasy卡牌游戏", url: "https://monad.fantasy.top/" },
             { name: "Kuru合约交易发币", url: "https://www.kuru.io/markets" },
             { name: "Uni兑换", url: "https://app.uniswap.org/swap" },
             { name: "Curvance借贷", url: "https://app.curvance.com/" },
-            { name: "Owlto部署合约", url: "https://owlto.finance/deploy/" },
-            { name: "Meme交易", url: "https://testnet.nad.fun/" },
+            { name: "打土狗", url: "https://testnet.nad.fun/" },
             { name: "Nostra借贷", url: "https://monad.nostra.finance/" },
-            { name: "Acurast手机挖矿", url: "https://acurast.com/processor/" },
             { name: "Bebop刷交易", url: "https://bebop.xyz/trade?network=monad&sell=MON&buy=WMON" },
-            { name: "Chogstars mint NFT", url: "https://testnet.lilchogstars.com/" },
-            { name: "Herb Genesis的NFT 新任务", url: "https://magiceden.io/mint-terminal/monad-testnet/0x002c8fd766605b609d31cc9764e27289daf033e9" },
-            { name: "Morkie的NFT", url: "https://morkie.xyz/monad" },
-            { name: "Aicraft投票", url: "https://aicraft.fun/projects/fizen" },
             { name: "Talentum任务平台", url: "https://monad.talentum.id/projects" },
-            { name: "Alchemy的NFT", url: "https://magiceden.io/mint-terminal/monad-testnet/0x436ee7219bb099f71c9db9c7de8862a9bde891ae" },
             { name: "Orbiter跨链", url: "https://testnet.orbiter.finance/en?src_chain=11155111&tgt_chain=10143&src_token=ETH" },
-            { name: "Accountable游戏", url: "https://game.accountable.capital/" },
-            { name: "Monad域名交易", url: "https://magiceden.io/collections/monad-testnet/0x3019bf1dfb84e5b46ca9d0eec37de08a59a41308" },
-            { name: "Nerzo的NFT", url: "https://www.nerzo.xyz/monad" },
+            { name: "Magic Eden NFT市场", url: "https://magiceden.io/collections/monad-testnet/0x3019bf1dfb84e5b46ca9d0eec37de08a59a41308" },
             { name: "L3的任务-全", url: "https://app.layer3.xyz/campaigns/monad-ecosystem-campaign" },
+            { name: "kintsu质押", url: "https://kintsu.xyz/staking" },
+            { name: "MAGMA质押", url: "https://www.magmastaking.xyz/" },
+            { name: "3.5新NFT", url: "https://magiceden.io/mint-terminal/monad-testnet/0x040ced701fd370b85f09cf6715adfe856d764ac9" },
+            { name: "NERZO-NFT合集", url: "https://www.nerzo.xyz/nfts?chain=MONAD+TESTNET" },
+            { name: "RAREB下注", url: "https://www.rarebetsports.io/" },
+            { name: "Bean交互", url: "https://swap.bean.exchange/swap" },
+            { name: "Multipli测试网", url: "https://testnet.multipli.fi/" },
+            { name: "Mu Digital铸币", url: "https://testnet.mudigital.net/" },
+            { name: "Kiloex交易", url: "https://app.kiloex.io/trade?chain=MON" },
+            { name: "exo游戏探索", url: "https://www.exospirits.com/" },
+            { name: "Monadex换B买B", url: "https://app.monadex.exchange/" },
+            { name: "DexAgg交互", url: "https://app-monad-testnet-v2.azaar.com/en/swap" },
+            { name: "Mace测速网交互", url: "https://testnet.swaps.mace.ag/" },
+            { name: "3.5官方新NFT", url: "https://magiceden.io/mint-terminal/monad-testnet/0xca70d0d4db50b0d4ed33ee3b3315365f1e6e4295" },
+            { name: "Demask买NFT", url: "https://app.demask.finance/explorer" },
+            { name: "Hash交互", url: "https://app.hashflow.com/" },
+            { name: "Mace测速网交互", url: "https://testnet.swaps.mace.ag/" },
         ];
 
         function shuffleArray(array) {
