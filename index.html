@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monad计划</title>
+    <title>monad计划</title>
     <style>
         body {
             background-color: #b3e0ff;
@@ -62,9 +62,16 @@
         .big-tag:hover {
             background-color: #ff9933;
         }
-        .bottom-tag {
+        .bottom{
+            width: 1000px;
+            height: 1000px;
+            margin: 0;
+           
+        }
+        .bottom-tag1 {
             width: 100%;
-            max-width: 250px;
+            border: 1px solid #ccc;
+            max-width: 180px;
             height: 40px;
             background-color: #ffcc66;
             text-align: center;
@@ -74,6 +81,65 @@
             cursor: pointer;
             transition: background-color 0.3s;
             margin-top: 20px;
+        }
+        .bottom-tag2 {
+            width: 100%;
+            max-width: 180px;
+            height: 40px;
+            background-color: #ffcc66;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 200px;
+            margin-top: -44px; 
+        }
+        .bottom-tag3 {
+            width: 100%;
+            max-width: 180px;
+            height: 40px;
+            background-color: #ffcc66;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 400px;
+            margin-top: -44px;
+         
+        }
+        .bottom-tag4 {
+            width: 100%;
+            max-width: 180px;
+            height: 40px;
+            background-color: #ffcc66;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 600px;
+            margin-top: -44px;
+         
+        }
+        .bottom-tag5 {
+            width: 100%;
+            max-width: 180px;
+            height: 40px;
+            background-color: #ffcc66;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 800px;
+            margin-top: -44px;
+         
         }
         .bottom-tag:hover {
             background-color: #ff9933;
@@ -155,36 +221,63 @@
 </head>
 <body>
     <div class="big-tag" onclick="window.open('https://testnet.monad.xyz', '_blank')">
-        666666666Monad主网
+        Monad官网
     </div>
 
     <div class="container" id="tag-container">
     </div>
-    <div class="bottom-tag" onclick="window.open('https://testnet.monadexplorer.com/', '_blank')">
-        测试网浏览器
+    <div class="bottom">
+        <div class="bottom-tag1" onclick="window.open('https://monad.fantasy.top/', '_blank')">
+            Fantasy卡牌游戏 
+        </div>
+        <div class="bottom-tag2" onclick="window.open('https://pandaria.lfj.gg/', '_blank')">
+            LFJ交易
+        </div>
+    
+        <div class="bottom-tag3" onclick="window.open('https://www.dusted.app/', '_blank')">
+            Dusted聊天
+        </div>
+    
+        <div class="bottom-tag4" onclick="window.open('https://rarelink.rarebetsports.io/', '_blank')">
+            RB下注 
+        </div>
+        <div class="bottom-tag5" onclick="window.open('https://www.kuru.io/markets', '_blank')">
+            KUKU合约交易
+        </div>
+        <div class="bottom-tag1" onclick="window.open('https://monad.curvance.com/monad', '_blank')">
+            Curvance借贷 
+        </div>
+        <div class="bottom-tag2" onclick="window.open('https://testnet.nad.fun/rewards/', '_blank')">
+            NAD土狗
+        </div>
+    
+        <div class="bottom-tag3" onclick="window.open('https://app.levr.bet/lab ', '_blank')">
+            LEVR赛事下注 
+        </div>
+    
+        <div class="bottom-tag4" onclick="window.open('https://magiceden.io/monad-testnet?gr', '_blank')">
+           Magic edenNFT交易 
+        </div>
+        <div class="bottom-tag5" onclick="window.open('https://stake.apr.io/', '_blank')">
+            Apriori质押
+        </div>
     </div>
-  
+    
+
 
 
     <script>
         const tags = [
-                       { name: "6666666Apriori质押", url: "https://stake.apr.io/" },
             { name: "Ambient交易", url: "https://monad.ambient.finance/" },
-            { name: "Fantasy卡牌游戏", url: "https://monad.fantasy.top/" },
-            { name: "6666666Kuru合约交易发币", url: "https://www.kuru.io/markets" },
             { name: "Uni兑换", url: "https://app.uniswap.org/swap" },
-            { name: "6666666Curvance借贷", url: "https://app.curvance.com/" },
-            { name: "6666666打土狗", url: "https://testnet.nad.fun/" },
             { name: "Nostra借贷", url: "https://monad.nostra.finance/" },
             { name: "Bebop刷交易", url: "https://bebop.xyz/trade?network=monad&sell=MON&buy=WMON" },
             { name: "Talentum任务平台", url: "https://monad.talentum.id/projects" },
             { name: "Orbiter跨链", url: "https://testnet.orbiter.finance/en?src_chain=11155111&tgt_chain=10143&src_token=ETH" },
-            { name: "6666666Magic Eden NFT市场", url: "https://magiceden.io/collections/monad-testnet/0x3019bf1dfb84e5b46ca9d0eec37de08a59a41308" },
             { name: "L3的任务-全", url: "https://app.layer3.xyz/campaigns/monad-ecosystem-campaign" },
             { name: "kintsu质押", url: "https://kintsu.xyz/staking" },
             { name: "MAGMA质押", url: "https://www.magmastaking.xyz/" },
-            { name: "NERZO-NFT合集", url: "https://www.nerzo.xyz/nfts?chain=MONAD+TESTNET" },
-            { name: "6666666RAREB下注", url: "https://www.rarebetsports.io/" },
+            { name: "RAREB下注", url: "https://www.rarebetsports.io/" },
             { name: "Bean交互", url: "https://swap.bean.exchange/swap" },
             { name: "Multipli测试网", url: "https://testnet.multipli.fi/" },
             { name: "Mu Digital铸币", url: "https://testnet.mudigital.net/" },
@@ -193,11 +286,9 @@
             { name: "Monadex换B买B", url: "https://app.monadex.exchange/" },
             { name: "DexAgg交互", url: "https://app-monad-testnet-v2.azaar.com/en/swap" },
             { name: "Mace测速网交互", url: "https://testnet.swaps.mace.ag/" },
-            { name: "6666666LFJ交易所", url: "https://pandaria.lfj.gg/" },
             { name: "Demask买NFT", url: "https://app.demask.finance/explorer" },
             { name: "Hash交互", url: "https://app.hashflow.com/" },
-            { name: "6666666Dustedl聊天", url: "https://www.dusted.app/" },            
-            { name: "投票【需要推荐码】", url: "https://aicraft.fun/projects/fizen" },
+            { name: "Mace测速网交互", url: "https://testnet.swaps.mace.ag/" },          
             { name: "Castora挖矿", url: "https://castora.xyz/pools" },
             { name: "Chaquen交换", url: "https://alpha.clober.io/" },
             { name: "COV市场交易", url: "https://fluidtest.covenant.finance/" },
@@ -212,21 +303,15 @@
             { name: "Previem交换", url: "https://testnet-preview.monorail.xyz/" },
             { name: "模拟交易", url: "https://testnet.narwhal.finance/" },
             { name: "Rubic交换", url: "https://testnet.rubic.exchange/" },
-            { name: "slo喊口号", url: "https://monad.slogain.gg/" },
             { name: "舆论购买", url: "https://odds.tadle.com/markets/" },
             { name: "timeswap", url: "https://app.timeswap.io/" },
             { name: "土狗3", url: "https://alpha-testnet.xlmeme.com/" },
             { name: "交易所2", url: "https://testnet.app.zaros.fi/account" },
             { name: "赌狗网站2", url: "https://app.zona.finance/trade" },
             { name: "借米", url: "https://app.sumer.money" },
-            { name: "666666LEVR", url: "https://app.levr.bet/lab" },
-        
- 
-        
-        
-        
+         
+            
         ];
-
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -275,13 +360,15 @@
                 container.appendChild(tagElement);
             });
         }
-
         function closeRemark() {
             const remarkContainer = document.querySelector('.remark-container');
             remarkContainer.style.display = 'none';
         }
 
+
+       
         window.onload = generateTags;
     </script>
+
 </body>
 </html>
